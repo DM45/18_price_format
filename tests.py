@@ -7,8 +7,12 @@ class FormatPriceTestCase(unittest.TestCase):
         price = validation_price(-1)
         self.assertIsNotNone(price)
 
-    def test_cant_be_floated(self):
+    def test_input_date_with_letters(self):
         price = validation_price('abc')
+        self.assertIsNotNone(price)
+
+    def test_input_date_with_comma(self):
+        price = validation_price(0,5)
         self.assertIsNotNone(price)
 
 
