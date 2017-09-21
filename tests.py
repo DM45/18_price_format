@@ -1,5 +1,4 @@
 import unittest
-
 from format_price import validation_price
 
 
