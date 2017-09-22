@@ -24,7 +24,7 @@ def format_price(input_price):
     int_part_price = list(int_part_price)
     int_part_price.reverse()
     for elem in range(len_list):
-        if (not (elem + mod_1) % mod_4) and elem != len_list - mod_1:
+        if (elem + mod_1) % mod_4 is None and elem != len_list - mod_1:
             int_part_price.insert(elem, ' ') 
     int_part_price.reverse()
     formated_price = ''
