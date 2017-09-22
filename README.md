@@ -15,11 +15,10 @@ Clone project from github and start.
 python format_price.py
 ```
 ## For import to site:
-```bash
-from format_price import validation_price, format_price
-'''
 
 ```bash
+from format_price import validation_price, format_price
+
 if not validation_price(price):
     format_price(price)
 else:
