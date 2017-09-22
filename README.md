@@ -26,9 +26,9 @@ if not validation_price(price):
 else:
     validation_price(price)
 ```
-Where price - your price
+Where 'price' - your price
 
-If format of price acceptable this code return formated price
+If format of price acceptable - this code return formated price
 
 Else - error
 
