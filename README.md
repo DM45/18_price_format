@@ -18,12 +18,14 @@ python format_price.py
 ```bash
 from format_price import validation_price, format_price
 '''
+
 ```bash
 if not validation_price(price):
     format_price(price)
 else:
     validation_price(price)
 '''
+
 Where price - your price
 
 If format of price acceptable this code return formated price
