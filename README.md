@@ -16,15 +16,14 @@ python format_price.py
 ```
 ## For import to site:
 
-```bash
+```python
 from format_price import validation_price, format_price
 
 if not validation_price(price):
     format_price(price)
 else:
     validation_price(price)
-'''
-
+```
 Where price - your price
 
 If format of price acceptable this code return formated price
@@ -32,6 +31,7 @@ If format of price acceptable this code return formated price
 Else - error
 
 # Output
+
 ```bash
 456 123 456
 '''
