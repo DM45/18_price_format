@@ -32,6 +32,12 @@ If format of price acceptable - this code return formated price
 
 Else - error
 
+# Start tests
+
+```bash
+python tests.py
+```
+
 # Output
 
 ```bash
