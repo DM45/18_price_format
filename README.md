@@ -1,6 +1,8 @@
 # Price Formatter
 
-Change format input price with tests
+Change format input price from 1234.0000 to 1 234.
+
+Tests included.
 
 # How to Install
 
@@ -34,7 +36,7 @@ Else - error
 
 ```bash
 456 123 456
-'''
+```
 
 # Project Goals
 
