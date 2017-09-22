@@ -2,13 +2,13 @@ import math
 
 
 def validation_price(price):
-	val_for_zero_check = 0
-	try:
-		price = float(price)
-	except (TypeError, ValueError):
-		return 'Wrong format of number!'
-	if price < val_for_zero_check:
-		return 'Price cant be negative!'
+    val_for_zero_check = 0
+    try:
+	price = float(price)
+    except (TypeError, ValueError):
+	return 'Wrong format of number!'
+    if price < val_for_zero_check:
+	return 'Price cant be negative!'
 
 
 def format_price(input_price):
