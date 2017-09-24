@@ -4,11 +4,11 @@ import math
 def validation_price(price):
     val_for_zero_check = 0
     try:
-	price = float(price)
+        price = float(price)
     except (TypeError, ValueError):
-	return 'Wrong format of number!'
+        return 'Wrong format of number!'
     if price < val_for_zero_check:
-	return 'Price cant be negative!'
+        return 'Price cant be negative!'
 
 
 def format_price(input_price):
@@ -25,7 +25,7 @@ def format_price(input_price):
     int_part_price.reverse()
     for elem in range(len_list):
         if (not (elem + mod_1) % mod_4) and elem != len_list - mod_1:
-            int_part_price.insert(elem, ' ') 
+            int_part_price.insert(elem, ' ')
     int_part_price.reverse()
     formated_price = ''
     for elem in int_part_price:
