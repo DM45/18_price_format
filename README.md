@@ -26,9 +26,9 @@ validation_price = get_validation_result(input_price)
         format_fract_part_price = format_fract_part_price(parts_of_price[1])
         full_formated_price = get_full_formated_price(
                 format_int_part_price, format_fract_part_price)
-        print(full_formated_price)
+        full_formated_price
     else:
-        print(validation_result)
+        validation_result
 ```
 Where 'price' - your price
 
