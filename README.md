@@ -19,18 +19,20 @@ python format_price.py
 ## For import to site:
 
 ```python
-from format_price import validation_price, format_price
-
-if not validation_price(price):
-    format_price(price)
-else:
-    validation_price(price)
+validation_price = get_validation_result(input_price)
+    if not validation_price:
+        parts_of_price = get_parts_of_price(input_price)
+        format_int_part_price = format_int_part_price(parts_of_price[0])
+        format_fract_part_price = format_fract_part_price(parts_of_price[1])
+        full_formated_price = get_full_formated_price(
+                format_int_part_price, format_fract_part_price)
+        print(full_formated_price)
+    else:
+        print(validation_result)
 ```
 Where 'price' - your price
 
-If format of price acceptable - this code return formated price
-
-Else - error
+If format of price acceptable - this code return formated price, else - print errors message.
 
 # Start tests
 
