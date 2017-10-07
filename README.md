@@ -21,17 +21,19 @@ python format_price.py
 ```python
 import format_price
 
-    input_price = input('Enter price: ')
-    validation_result = format_price.get_validation_result(input_price)
-    if not validation_result:
-        parts_of_price = format_price.get_parts_of_price(input_price)
-        format_int_part_price = format_price.format_int_part_price(parts_of_price[0])
-        format_fract_part_price = format_price.format_fract_part_price(parts_of_price[1])
-        full_formated_price = format_price.get_full_formated_price(
-                format_int_part_price, format_fract_part_price)
-        print(full_formated_price)
-    else:
-        print(validation_result)
+input_price = input('Enter price: ')
+validation_result = format_price.get_validation_result(input_price)
+if not validation_result:
+    parts_of_price = format_price.get_parts_of_price(input_price)
+    format_int_part_price = format_price.format_int_part_price(
+            parts_of_price[0])
+    format_fract_part_price = format_price.format_fract_part_price(
+            parts_of_price[1])
+    full_formated_price = format_price.get_full_formated_price(
+            format_int_part_price, format_fract_part_price)
+    print(full_formated_price)
+else:
+    print(validation_result)
 ```
 # Start tests
 
