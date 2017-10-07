@@ -14,12 +14,11 @@ def get_validation_result(price):
 def get_parts_of_price(price):
     mod_0, mod_2 = 0, 2
     try:
-        int_part_price, fract_part_price = input_price.split('.')
+        int_part_price, fract_part_price = price.split('.')
         fract_part_price = '{}.{}'.format(mod_0, fract_part_price)
     except ValueError:
-        int_part_price = input_price
+        int_part_price = price
         fract_part_price = 0
-
     return int_part_price, fract_part_price
 
 
@@ -63,8 +62,8 @@ def get_full_formated_price(int_formated_price, fract_formated_price):
 
 if __name__ == '__main__':
     input_price = input('Enter price: ')
-    validation_price = get_validation_result(input_price)
-    if not validation_price:
+    validation_result = get_validation_result(input_price)
+    if not validation_result:
         parts_of_price = get_parts_of_price(input_price)
         format_int_part_price = format_int_part_price(parts_of_price[0])
         format_fract_part_price = format_fract_part_price(parts_of_price[1])
